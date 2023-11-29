@@ -19,9 +19,9 @@ import datetime
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "healthcure-9f50b-eaeed22fd8f2.json"
 
 # Initialize Firestore DB
-cred = credentials.Certificate('key.json')
+cred = credentials.Certificate('/.json')
 default_app = initialize_app(cred, {
-    'storageBucket': 'healthcure-9f50b.appspot.com'
+    'storageBucket': '//'
 })
 bucket = storage.bucket()
 db = firestore.client()
